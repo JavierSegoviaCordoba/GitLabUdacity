@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayoutGoogleSignInActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.GoogleSignInActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSigned"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/appCompatImageViewUsernamePhoto"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                tools:src="@mipmap/ic_launcher_round" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/appCompatTextViewUsername"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/recyclerItemPrimaryTextColor"
+                tools:text="@string/nav_header_title" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/appCompatTextViewUsernameEmail"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/recyclerItemPrimaryTextColor"
+                tools:text="@string/nav_header_subtitle" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/appCompatButtonSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@android:color/white"
+                android:text="@string/sign_out_label"
+                android:textColor="@color/darkSecondaryInverseTextColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/appCompatTextViewSyncGoogleLabel"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/sync_gitlab_google_label"
+                android:textColor="?attr/recyclerItemPrimaryTextColor"
+                app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:buttonSize="wide"
+                app:colorScheme="light" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

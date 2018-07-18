@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAddGitLabAccount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/generalSecondaryBackground"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:context=".activities.AddGitLabAccountActivity">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/appCompatImageViewGitLabAddAccountLabel"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_gitlab_account_text_label"
+                    android:textColor="?attr/textsColorSecondary"
+                    android:textSize="12sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/textInputLayoutAccessToken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="?attr/textsColorSecondary">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/appCompatEditTextAccessToken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/access_token_label"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:minWidth="244dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCreateTokenOrAddAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/appCompatButtonCreateToken"
+                        style="?attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/create_token_label"
+                        android:textColor="?attr/colorAccent" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/appCompatButtonAddAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="?attr/colorAccent"
+                        android:text="@string/add_account_label"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/appCompatTextViewAccountList"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/account_list_label"
+                    android:textColor="?attr/textsColorSecondary" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewAccountList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:clipToPadding="false"
+                    android:layoutAnimation="@anim/layout_animation_slide_right"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:paddingEnd="32dp"
+                    android:paddingStart="32dp"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/circle_account_item" />
+
+            </LinearLayout>
+
+</layout>

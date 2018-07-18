@@ -1,0 +1,157 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">@color/darkPrimaryColor</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+    </style>
+
+    <style name="AppTheme.Normal" parent="AppTheme">
+        <item name="colorPrimary">@color/normalPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/normalPrimaryDarkColor</item>
+        <item name="colorAccent">@color/normalSecondaryColor</item>
+
+        <item name="android:windowBackground">@color/normalPrimaryBackgroundColor</item>
+        <item name="generalPrimaryBackground">@color/normalPrimaryBackgroundColor</item>
+        <item name="generalSecondaryBackground">@color/normalSecondaryBackgroundColor</item>
+        <item name="android:textColorPrimary">@color/normalPrimaryTextColor</item>
+        <item name="android:textColorSecondary">@color/normalSecondaryTextColor</item>
+
+        <item name="android:colorControlHighlight">@color/rippleColor</item>
+        <item name="android:listDivider">@color/normalPrimaryBackgroundColor</item>
+
+        <item name="android:alertDialogTheme">@style/DialogStyleNormal</item>
+
+        <!--Texts-->
+        <item name="textsColorPrimary">@color/normalPrimaryTextColor</item>
+        <item name="textsColorSecondary">@color/normalSecondaryTextColor</item>
+
+        <!--NavigationView-->
+        <item name="navigationViewBackgroundColor">@color/normalSecondaryBackgroundColor</item>
+        <item name="navigationViewItemBackgroundColor">@color/normalSecondaryBackgroundColor</item>
+        <item name="navigationViewItemBackgroundSelectedColor">@color/normalPrimaryBackgroundColor
+        </item>
+        <item name="navigationViewItemTextColor">@color/normalPrimaryTextColor</item>
+        <item name="navigationViewItemTextSelectedColor">@color/darkSecondaryColor</item>
+        <item name="navigationViewItemIconTintColor">@color/normalTertiaryBackgroundColor</item>
+        <item name="navigationViewItemIconTintSelectedColor">@color/darkSecondaryColor</item>
+        <!--NavigationView Header-->
+        <item name="navigationViewHeaderDividerColor">@color/normalPrimaryBackgroundColor</item>
+        <item name="navigationViewHeaderBackgroundColor">@color/normalSecondaryBackgroundColor
+        </item>
+
+        <!--RecyclerView-->
+        <item name="recyclerItemPrimaryTextColor">@color/normalPrimaryTextColor</item>
+        <item name="recyclerItemSecondaryTextColor">@color/normalSecondaryTextColor</item>
+        <item name="recyclerItemIconsColor">@color/darkSecondaryDarkColor</item>
+        <item name="recyclerItemCircleBackgroundColor">@color/normalPrimaryBackgroundColor</item>
+        <item name="recyclerItemBackgroundColor">@color/normalSecondaryBackgroundColor</item>
+        <item name="recyclerItemDividerColor">@color/normalPrimaryBackgroundColor</item>
+
+        <!--Spinner-->
+        <item name="spinnerArrowColor">@color/darkPrimaryTextColor</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerStyleNormal</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="AppTheme">
+        <item name="colorPrimary">@color/darkPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/darkPrimaryDarkColor</item>
+        <item name="colorAccent">@color/darkSecondaryColor</item>
+
+        <item name="android:windowBackground">@color/darkPrimaryBackgroundColor</item>
+        <item name="generalPrimaryBackground">@color/darkPrimaryBackgroundColor</item>
+        <item name="generalSecondaryBackground">@color/darkPrimaryLightColor</item>
+        <item name="android:textColorPrimary">@color/darkPrimaryTextColor</item>
+        <item name="android:textColorSecondary">@color/darkSecondaryTextColor</item>
+
+        <item name="android:colorActivatedHighlight">@color/darkSecondaryColor</item>
+
+        <item name="android:colorControlHighlight">@color/rippleColor</item>
+        <item name="android:listDivider">@color/darkPrimaryLightColor</item>
+
+        <item name="android:alertDialogTheme">@style/DialogStyleDark</item>
+
+        <!--Texts-->
+        <item name="textsColorPrimary">@color/darkPrimaryTextColor</item>
+        <item name="textsColorSecondary">@color/darkSecondaryTextColor</item>
+
+        <!--NavigationView-->
+        <item name="navigationViewBackgroundColor">@color/darkPrimaryColor</item>
+        <item name="navigationViewItemBackgroundColor">@color/darkPrimaryColor</item>
+        <item name="navigationViewItemBackgroundSelectedColor">@color/darkPrimaryLightColor</item>
+        <item name="navigationViewItemTextColor">@color/darkPrimaryTextColor</item>
+        <item name="navigationViewItemTextSelectedColor">@color/darkSecondaryLightColor</item>
+        <item name="navigationViewItemIconTintColor">@color/darkTertiaryBackgroundColor</item>
+        <item name="navigationViewItemIconTintSelectedColor">@color/darkSecondaryLightColor</item>
+        <!--NavigationView Header-->
+        <item name="navigationViewHeaderDividerColor">@color/darkSecondaryLightColor</item>
+        <item name="navigationViewHeaderBackgroundColor">@color/darkPrimaryDarkColor</item>
+
+        <!--RecyclerView-->
+        <item name="recyclerItemPrimaryTextColor">@color/darkPrimaryTextColor</item>
+        <item name="recyclerItemSecondaryTextColor">@color/darkSecondaryTextColor</item>
+        <item name="recyclerItemIconsColor">@color/darkPrimaryTextColor</item>
+        <item name="recyclerItemCircleBackgroundColor">@color/darkSecondaryTextColor</item>
+        <item name="recyclerItemBackgroundColor">@color/darkPrimaryLightColor</item>
+        <item name="recyclerItemDividerColor">@color/darkPrimaryBackgroundColor</item>
+
+        <!--Spinner-->
+        <item name="spinnerArrowColor">@color/darkPrimaryTextColor</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerStyleDark</item>
+    </style>
+
+    <style name="AppTheme.Normal.NoActionBar" parent="AppTheme.Normal">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.Dark.NoActionBar" parent="AppTheme.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppThemeSettings" parent="AppTheme.Normal">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="AppTheme.Dark.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogStyleNormal" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:background">@color/normalSecondaryBackgroundColor</item>
+        <item name="android:textColorAlertDialogListItem">@color/normalPrimaryTextColor</item>
+        <item name="android:textColorPrimary">@color/normalPrimaryTextColor</item>
+        <item name="android:textColorSecondary">@color/normalPrimaryTextColor</item>
+        <item name="android:textColor">@color/normalPrimaryTextColor</item>
+    </style>
+
+    <style name="DialogStyleDark" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:background">@color/darkPrimaryBackgroundColor</item>
+        <item name="android:textColorAlertDialogListItem">@color/darkPrimaryTextColor</item>
+        <item name="android:textColorPrimary">@color/darkPrimaryTextColor</item>
+        <item name="android:textColorSecondary">@color/darkPrimaryTextColor</item>
+        <item name="android:textColor">@color/darkPrimaryTextColor</item>
+    </style>
+
+    <style name="RippleColor" parent="Theme.AppCompat">
+        <item name="android:colorControlHighlight">@color/rippleColor</item>
+    </style>
+
+    <style name="SpinnerStyleNormal" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/normalSecondaryInverseTextColor</item>
+        <item name="android:textColorPrimary">@color/normalSecondaryInverseTextColor</item>
+        <item name="android:textColorSecondary">@color/normalSecondaryInverseTextColor</item>
+    </style>
+
+    <style name="SpinnerStyleDark" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/normalSecondaryInverseTextColor</item>
+        <item name="android:textColorPrimary">@color/normalSecondaryInverseTextColor</item>
+        <item name="android:textColorSecondary">@color/normalSecondaryInverseTextColor</item>
+    </style>
+</resources>

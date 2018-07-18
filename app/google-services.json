@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "81531897420",
+    "firebase_url": "https://udacity-gitlab-d6351.firebaseio.com",
+    "project_id": "udacity-gitlab-d6351",
+    "storage_bucket": "udacity-gitlab-d6351.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81531897420:android:bbbca55269e94a8e",
+        "android_client_info": {
+          "package_name": "com.videumcorp.gitlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81531897420-rg80iubiij9tnp13ab2fns9c2ub7j432.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.videumcorp.gitlab",
+            "certificate_hash": "d940eee23c92ea10ce5fbf67b7e797f23112cbf9"
+          }
+        },
+        {
+          "client_id": "81531897420-q9vo99f6rk1a3ld3d2d23aciuu39h9h3.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "81531897420-q9vo99f6rk1a3ld3d2d23aciuu39h9h3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVqL8-xuuNxZX1uEW5fnmwHG2t2wy9Ewk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81531897420-q9vo99f6rk1a3ld3d2d23aciuu39h9h3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

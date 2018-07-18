@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="lists_lateral_padding">120dp</dimen>
+</resources>

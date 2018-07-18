@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutFragmentRepositoryTree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/generalSecondaryBackground"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewFragmentRepositoryTree"
+                android:name="com.videumcorp.gitlab.fragments.FileFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:context=".fragments.RepositoryTreeFragment"
+                tools:listitem="@layout/fragment_repository_tree_item" />
+
+            <com.pddstudio.highlightjs.HighlightJsView
+                android:id="@+id/webViewFragmentRepositoryTree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <us.feras.mdv.MarkdownView
+                android:id="@+id/markdownFragmentRepositoryTree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButtonFragmentRepositoryTree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/ic_subdirectory_arrow_left_black_24dp"
+                app:fabSize="normal"
+                app:useCompatPadding="true"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</layout>

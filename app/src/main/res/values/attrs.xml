@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="isTablet">false</bool>
+
+    <!--General-->
+    <attr name="generalPrimaryBackground" format="reference|color" />
+    <attr name="generalSecondaryBackground" format="reference|color" />
+    <attr name="generalColorControlHighlight" format="reference|color" />
+
+    <!--Texts-->
+    <attr name="textsColorPrimary" format="reference|color" />
+    <attr name="textsColorSecondary" format="reference|color" />
+
+    <!--NavigationView-->
+    <attr name="navigationViewBackgroundColor" format="reference|color" />
+    <attr name="navigationViewItemBackgroundColor" format="reference|color" />
+    <attr name="navigationViewItemBackgroundSelectedColor" format="reference|color" />
+    <attr name="navigationViewItemTextColor" format="reference|color" />
+    <attr name="navigationViewItemTextSelectedColor" format="reference|color" />
+    <attr name="navigationViewItemIconTintColor" format="reference|color" />
+    <attr name="navigationViewItemIconTintSelectedColor" format="reference|color" />
+    <attr name="navigationViewItemDividerColor" format="reference|color" />
+    <!--NavigationView Header-->
+    <attr name="navigationViewHeaderDividerColor" format="reference|color" />
+    <attr name="navigationViewHeaderBackgroundColor" format="reference|color" />
+
+    <!--RecyclerView-->
+    <attr name="recyclerItemPrimaryTextColor" format="reference|color" />
+    <attr name="recyclerItemSecondaryTextColor" format="reference|color" />
+    <attr name="recyclerItemIconsColor" format="reference|color" />
+    <attr name="recyclerItemDividerColor" format="reference|color" />
+    <attr name="recyclerItemBackgroundColor" format="reference|color" />
+    <attr name="recyclerItemCircleBackgroundColor" format="reference|color" />
+
+    <!--Spinner-->
+    <attr name="spinnerArrowColor" format="reference|color" />
+</resources>

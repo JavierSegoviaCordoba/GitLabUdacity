@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutFragmentRepositoryCommits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/generalSecondaryBackground"
+        android:paddingEnd="@dimen/lists_lateral_padding"
+        android:paddingStart="@dimen/lists_lateral_padding">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewFragmentRepositoryCommits"
+            android:name="com.videumcorp.gitlab.fragments.FileFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:context=".fragments.RepositoryTreeFragment"
+            tools:listitem="@layout/fragment_repository_commit_item" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</layout>

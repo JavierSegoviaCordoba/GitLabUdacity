@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrainlayoutNavHeaderMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constrainlayoutNavHeaderUser"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?attr/navigationViewHeaderBackgroundColor"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_constraintDimensionRatio="16:9">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/appCompatImageViewHeaderLogo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/nav_header_desc"
+                app:layout_constraintBottom_toTopOf="@+id/appCompatTextViewNavHeaderTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:src="@mipmap/ic_launcher_round" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/appCompatTextViewNavHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBottom_toTopOf="@+id/appCompatTextViewNavHeaderSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="@string/nav_header_title" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/appCompatTextViewNavHeaderSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_goneMarginBottom="16dp"
+                tools:text="@string/nav_header_subtitle" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/appCompatImageViewNavigationViewAccountSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_arrow_drop_down_white_24dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNavHeaderAccountList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/constrainlayoutNavHeaderUser"
+            tools:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewGitLabAccounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                tools:itemCount="2"
+                tools:listitem="@layout/account_item" />
+
+            <LinearLayout
+                android:theme="@style/RippleColor"
+                android:id="@+id/linearLayoutAddGitLabAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:tint="?attr/recyclerItemSecondaryTextColor"
+                    android:id="@+id/appCompatImageViewGitLabAddAccountIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:srcCompat="@drawable/ic_add_white_24dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:textColor="?attr/recyclerItemSecondaryTextColor"
+                    android:id="@+id/appCompatTextViewAddGitLabAccountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/add_account_label" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/navigationViewHeaderDividerColor" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

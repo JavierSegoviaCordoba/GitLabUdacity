@@ -1,0 +1,32 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+
+    <!--Normal theme-->
+    <color name="normalPrimaryColor">#222E3C</color>
+    <color name="normalPrimaryDarkColor">#1A212C</color>
+    <color name="normalPrimaryBackgroundColor">#ffffff</color>
+    <color name="normalPrimaryTextColor">#000000</color>
+
+    <color name="normalSecondaryColor">#1DA1F2</color>
+    <color name="normalSecondaryBackgroundColor">#eff2f3</color>
+    <color name="normalTertiaryBackgroundColor">#969ca1</color>
+    <color name="normalSecondaryTextColor">#090909</color>
+    <color name="normalSecondaryInverseTextColor">#ffffff</color>
+
+    <!--Dark theme-->
+    <color name="darkPrimaryColor">#222E3C</color>
+    <color name="darkPrimaryLightColor">#1D2733</color>
+    <color name="darkPrimaryDarkColor">#1A212C</color>
+    <color name="darkPrimaryBackgroundColor">#151D27</color>
+    <color name="darkPrimaryTextColor">#ffffff</color>
+
+    <color name="darkSecondaryColor">#1DA1F2</color>
+    <color name="darkSecondaryLightColor">#50cff9</color>
+    <color name="darkSecondaryDarkColor">#1d76f2</color>
+    <color name="darkTertiaryBackgroundColor">#b5bcc2</color>
+    <color name="darkSecondaryTextColor">#eff2f3</color>
+    <color name="darkSecondaryInverseTextColor">#000000</color>
+
+    <color name="rippleColor">#4f5d6e</color>
+
+</resources>

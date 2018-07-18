@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'udacity'
+            keyPassword 'udacity'
+            storeFile file('E:/Dahnark/GoogleDrive/Documentos/Desarrollo/Keystores/udacity.jks')
+            storePassword 'udacity'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.videumcorp.gitlab"
+        minSdkVersion 21
+        //noinspection OldTargetApi
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue("bool", "FIREBASE_CRASH_ENABLED", "true")
+            signingConfig signingConfigs.release
+        }
+        debug {
+            resValue("bool", "FIREBASE_CRASH_ENABLED", "false")
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding.enabled = true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:customtabs:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:palette-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'jp.wasabeef:glide-transformations:3.3.0'
+    //SearchView
+    implementation 'com.lapism:searchview:27.1.1.0.0'
+    //Firebase
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.firebaseui:firebase-ui-auth:3.2.2'
+    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    //Highlight View
+    implementation 'com.pddstudio:highlightjs-android:1.5.0'
+    //Markdown View
+    implementation 'us.feras.mdv:markdownview:1.1.0'
+    //Duolingo
+    implementation 'com.duolingo.open:rtl-viewpager:1.0.3'
+}
+
+apply plugin: 'com.google.gms.google-services'
