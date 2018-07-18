@@ -1,4 +1,4 @@
-#How to use
+# How to use
 - Change google web client ID inside strings.xml
     - You can get one inside Firebase authentication (Enable Google as provider and copy the ID).
 - Create a GitLab token and add it
