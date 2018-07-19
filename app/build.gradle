@@ -6,7 +6,7 @@ android {
         release {
             keyAlias 'udacity'
             keyPassword 'udacity'
-            storeFile file('E:/Dahnark/GoogleDrive/Documentos/Desarrollo/Keystores/udacity.jks')
+            storeFile file('/udacity.jks')
             storePassword 'udacity'
         }
     }
