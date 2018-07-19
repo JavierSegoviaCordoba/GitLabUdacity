@@ -4,6 +4,21 @@
 - Create a GitLab token and add it
 - Change AdMob ID inside strings.xml if you want to get real ads.
 
+```
+// These rules grant access to a node matching the authenticated
+// user's ID from the Firebase auth token
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
+```
+
 # GitHub Username
 JavierSegoviaCordoba
 
