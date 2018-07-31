@@ -1,3 +1,7 @@
+Click the image to view the video:
+
+[![GitLab](https://github.com/JavierSegoviaCordoba/GitLabUdacity/blob/master/GitLab.png)](https://youtu.be/R43UjcxDx8s "GitLab")
+
 # How to use
 - Change google web client ID inside strings.xml
     - You can get one inside Firebase authentication (Enable Google as provider and copy the ID).
@@ -38,10 +42,8 @@ Log in with your GitLab account and check your Projects.
 - Save offline a list of GitLab projects for all of your GitLab accounts.    
 
 # User Interface Mocks
-Click the image to view the video:
 
-[![GitLab](https://github.com/JavierSegoviaCordoba/GitLabUdacity/blob/master/GitLab.png)](https://youtu.be/R43UjcxDx8s "GitLab")
-<br>Ninjamock link: [https://www.ninjamock.com/s/DL8C9Rx](https://www.ninjamock.com/s/DL8C9Rx "https://www.ninjamock.com/s/DL8C9Rx")
+Ninjamock link: [https://www.ninjamock.com/s/DL8C9Rx](https://www.ninjamock.com/s/DL8C9Rx "https://www.ninjamock.com/s/DL8C9Rx")
 
 # Key Considerations
 
